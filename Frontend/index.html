@@ -1,0 +1,275 @@
+<!-- Tells the browser that this doc uses HTML5 -->
+<!DOCTYPE html>
+<!-- Defines the language of the document -->
+<html lang="en">
+<!-- Header section which contains metadata and links to external resources-->
+<head>
+    <title>food_delivery</title>
+    <link rel="icon" type="image/x-icon" href="../logo2.svg">
+    <link rel="stylesheet" href="../CSS/index.css">
+
+    <script src="../JS/index.js" defer></script>
+</head>
+
+<!-- Body section which contains the content of the webpage -->
+<body>
+
+<!-- Creating the container for the header -->
+<div class="header">
+
+        <h1>Food Delivery</h1>
+
+        <div class="right-menu">
+            <a href="#" onclick="goHome(); return false;">Home</a>
+            <a href="#" onclick="showSection('aboutPage'); return false;">About</a>
+            <a href="#" onclick="showSection('contactPage'); return false;">Contact</a>
+        </div>
+
+        <!-- <div class="menu">
+            <a href="../HTML/login.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            </svg></a>
+        </div> -->
+
+</div>
+
+<section class="hero">
+
+    <div class="hero-content">
+        <h1>Welcome to Food Delivery</h1>
+        <h2>Delicious Food to your doorstep </h2>
+
+        <p>
+            Order your favorite meals from top restaurants near you.
+            Fresh, fast, and just a click away!
+        </p>
+
+        <div class="hero-buttons">
+            <button onclick="window.location.href='login.html'">Order Now</button>
+            <button onclick="window.location.href='signup.html'">Sign Up</button>
+        </div>
+
+        <!--  FEATURE CARDS -->
+        <div class="hero-features">
+
+            <div class="feature-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" color="gold" fill="currentColor" class="bi bi-fork-knife" viewBox="0 0 16 16">
+                    <path d="M13 .5c0-.276-.226-.506-.498-.465-1.703.257-2.94 2.012-3 8.462a.5.5 0 0 0 .498.5c.56.01 1 .13 1 1.003v5.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5zM4.25 0a.25.25 0 0 1 .25.25v5.122a.128.128 0 0 0 .256.006l.233-5.14A.25.25 0 0 1 5.24 0h.522a.25.25 0 0 1 .25.238l.233 5.14a.128.128 0 0 0 .256-.006V.25A.25.25 0 0 1 6.75 0h.29a.5.5 0 0 1 .498.458l.423 5.07a1.69 1.69 0 0 1-1.059 1.711l-.053.022a.92.92 0 0 0-.58.884L6.47 15a.971.971 0 1 1-1.942 0l.202-6.855a.92.92 0 0 0-.58-.884l-.053-.022a1.69 1.69 0 0 1-1.059-1.712L3.462.458A.5.5 0 0 1 3.96 0z"/>
+                </svg>
+                <h4>Wide Variety</h4>
+                <p>Explore different cuisines</p>
+            </div>
+
+            <div class="feature-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" color="gold" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                    <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+                </svg>
+                <h4>Fast Delivery</h4>
+                <p>Quick and reliable service</p>
+            </div>
+
+            <div class="feature-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" color="gold" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <h4>Top Rated</h4>
+                <p>Best restaurants near you</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="categories" id="categoriesSection">
+
+    <h2>Explore Categories</h2>
+    <!-- Grid container for the categories -->
+    <div class="category-grid">
+
+    <!-- Category card 1 -->
+    <div class="category-card" onclick="window.location.href='login.html'">
+        <img src="../Images/Categories/breakfast.jpg" alt="Breakfast">
+        <h3>Breakfast</h3>
+    </div>
+
+    <!-- Category card 2 -->
+    <div class="category-card" onclick="window.location.href='login.html'">
+        <img src="../Images/Categories/meals.jpg" alt="Meals">
+        <h3>Meals</h3>
+    </div>
+    <!-- Category card 3 -->
+    <div class="category-card" onclick="window.location.href='login.html'">
+        <img src="../Images/Categories/biryani.jpg" alt="Biryani">
+        <h3>Biryani</h3>
+    </div>
+
+    <!-- Category card 4 -->
+    <div class="category-card" onclick="window.location.href='login.html'">
+        <img src="../Images/Categories/starter.webp" alt="Starter">
+        <h3>Starters</h3>
+    </div>
+
+    <!-- Category card 5 -->
+    <div class="category-card" onclick="window.location.href='login.html'">
+        <img src="../Images/Categories/curry.jpg" alt="Curry">
+        <h3>Curry</h3>
+    </div>
+
+    <!-- Category card 6 -->
+    <div class="category-card" onclick="window.location.href='login.html'">
+        <img src="../Images/Categories/fast casual.avif" alt="Fast casual">
+        <h3>Fast Casual</h3>
+    </div>
+    
+    <!-- Category card 7 -->
+    <div class="category-card" onclick="window.location.href='login.html'">
+        <img src="../Images/Categories/dessert.jpg" alt="Dessert">
+        <h3>Dessert</h3>
+    </div>
+
+    <!-- Category card 8 -->
+    <div class="category-card" onclick="window.location.href='login.html'">
+        <img src="../Images/Categories/beverage.jpg" alt="Beverage">
+        <h3>Beverage</h3>
+    </div>
+
+    </div>
+
+</div> 
+
+<!-- About Section -->
+<div id="aboutPage" class="menu-page" style="display:none;">
+
+    <button class="back-btn" onclick="goHome()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+        </svg></button>
+
+    <h2>About Us</h2>
+
+    <div class="info-card large-card">
+    <p>
+        Food Delivery is an online platform that connects customers with their
+        favorite restaurants. You can explore different cuisines, place orders,
+        and get food delivered quickly to your doorstep.
+    </p>
+
+    <p>
+        Our mission is to provide fast, reliable, and convenient food delivery
+        services while supporting local restaurants and ensuring customer satisfaction.
+    </p>
+    </div>
+
+</div>
+
+<!-- Contact Section -->
+<div id="contactPage" class="menu-page" style="display:none;">
+
+    <button class="back-btn" onclick="goHome()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+        </svg></button>
+
+    <h2>Contact Us</h2>
+
+    <div class="info-cards">
+
+        <div class="info-card">
+        <h3>Email</h3>
+        <p>support@fooddelivery.com</p>
+        </div>
+
+        <div class="info-card">
+        <h3>Phone</h3>
+        <p>+91 9876543210</p>
+        </div>
+
+        <div class="info-card">
+        <h3>Location</h3>
+        <p>Vijayawada, Andhra Pradesh</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Brand Section -->
+        <div class="footer-section brand">
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="../logo2.svg" alt="Logo" width="50" height="50"></div>
+                <div>
+                    <h3>Food Delivery</h3>
+                    <p>Your trusted food delivery partner</p>
+                </div>
+            </div>
+
+            <p class="footer-text">
+                Food Delivery is an online platform that connects customers with their favorite restaurants. 
+                You can explore a variety of cuisines, place orders, and get delicious meals delivered to your doorstep quickly and safely.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+            <li><a href="#" onclick="goHome(); return false;">Home</a></li>
+            <li><a href="#" onclick="showSection('aboutPage'); return false;">About</a></li>
+            <li><a href="#" onclick="showSection('contactPage'); return false;">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+
+            <h3>Contact Info</h3>
+
+            <p> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                </svg> support@fooddelivery.com
+            </p>
+            <p> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg> WhatsApp: 9876543210
+            </p>
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                </svg> Vijayawada, Andhra Pradesh
+            </p>
+
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+            <a href="https://www.instagram.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg></a>
+            <a href="https://x.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+            </svg></a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

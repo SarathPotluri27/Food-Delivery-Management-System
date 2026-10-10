@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="icon" type="image/x-icon" href="../logo2.svg">
+    <link rel="stylesheet" href="../CSS/admin.css">
+    <script src="../JS/admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h2>Admin-Dashboard</h2>
+
+    <div class="header-right">
+        <span>Admin</span>
+        <button onclick="adminLogout()">Logout</button>
+    </div>
+</div>
+
+<div class="admin-container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <button onclick="showSection('overview','Overview')">Overview</button>
+        <button onclick="showSection('addFood','Add Food')">Add Food</button>
+        <button onclick="showSection('ordersSection','Orders')">Orders</button>
+        <button onclick="showSection('usersSection','Users')">Users</button>
+        <button onclick="showSection('reviewsSection','Reviews')">Reviews</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <!-- Overview -->
+        <div id="overview" class="admin-section">
+            <h2>Overview</h2>
+            <h3>Orders Overview</h3>
+            <canvas id="ordersChart"></canvas>
+            <h3>Revenue Overview</h3>
+            <canvas id="revenueChart"></canvas>
+            <div id="stats"></div>
+        </div>
+
+        <!-- Add Food -->
+        <div id="addFood" class="admin-section">
+            <h2>Add Food Item</h2>
+
+            <input id="foodName" placeholder="Food Name">
+            <input id="foodPrice" placeholder="Price">
+            <input id="foodImage" placeholder="Image URL">
+            <input id="restaurantName" placeholder="Restaurant Name">
+            <input id="rating" placeholder="Rating">
+            <input id="location" placeholder="Location">
+            <input id="category" placeholder="Category (Breakfast, Meals, etc)">
+
+            <button onclick="addFood()">Add</button>
+
+            <!-- NEW: show added items -->
+            <h3>Added Items</h3>
+            <input type="text" id="foodSearch" placeholder="Search food..." onkeyup="searchFoodAdmin()">
+            <div id="foodList" class="food-grid-admin"></div>
+        </div>
+
+        <!-- Orders -->
+        <div id="ordersSection" class="admin-section" style="display:none;">
+            <h2>Orders</h2>
+            <div id="ordersList"></div>
+        </div>
+
+        <!-- Users -->
+        <div id="usersSection" class="admin-section" style="display:none;">
+            <h2>Users</h2>
+            <div id="usersList"></div>
+        </div>
+
+        <!-- Reviews -->
+        <div id="reviewsSection" class="admin-section" style="display:none;">
+            <h2>Reviews</h2>
+            <div id="reviewsList"></div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

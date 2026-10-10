@@ -1,0 +1,46 @@
+<!-- Tells the browser that this doc uses HTML5 -->
+<!DOCTYPE html>
+<!-- Defines the language of the document -->
+<html lang="en">
+<!-- Header section which contains metadata and links to external resources -->
+<head>
+    <title>Login - Food Delivery</title>
+    <link rel="icon" type="image/x-icon" href="../logo2.svg">
+    <link rel="stylesheet" href="../CSS/login.css">
+
+    <script src="../JS/login.js" defer></script>
+</head>
+
+<!-- Body section which contains the content of the webpage -->
+<body>
+
+<!-- Creating the container for the login form -->
+<div class="login-container">
+    
+    <h2>Login</h2>
+
+    <!-- Creating a form for login page -->
+    <form onsubmit="goToDashboard(event)">
+
+        <!-- Input fields for email and password -->
+        <label>Email ID</label>
+        <input type="email" placeholder="Enter email id" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
+
+        <button type="submit">Login</button>
+
+        <!-- <button type="button">Sign up with Google</button> -->
+
+    </form>
+    <!-- Link to signup page -->
+    <p class="signup-text">
+        Don't have an account?
+        <a href="signup.html">Sign Up</a>
+    </p>
+
+</div>
+
+</body>
+</html>

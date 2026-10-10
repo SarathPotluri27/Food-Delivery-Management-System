@@ -1,0 +1,64 @@
+<!-- Tells the browser that this doc uses HTML5 -->
+<!DOCTYPE html>
+<!-- Defines the language of the document -->
+<html lang="en">
+<!-- Header section which contains metadata and links to external resources -->
+<head>
+    <title>Signup</title>
+    <link rel="icon" type="image/x-icon" href="../logo2.svg">
+    <link rel="stylesheet" href="../CSS/signup.css">
+
+    <!-- JavaScript -->
+    <script src="../JS/signup.js" defer></script>
+
+</head>
+
+<!-- Body section which contains the content of the webpage -->
+<body>
+    <!-- Creating the container for the signup form -->
+    <div class="signup-container">
+
+        <h2>Signup</h2>
+
+        <!-- Creating the signup form -->
+        <form onsubmit="showSuccess(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter email id" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter phone number" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+            <!-- Checkbox to toggle password visibility -->
+            <div class="show-password">
+                <input type="checkbox" id="showpass1" onclick="togglePassword()">
+                <label for="showpass1">Show Password</label>
+            </div>
+            
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" placeholder="Enter password again" required>
+            <!-- Checkbox to toggle confirm-password visibility -->
+            <div class ="show-password">
+                <input type="checkbox" id="showpass2" onclick="toggleConfirmPassword()">
+                <label for="showpass2">Show Password</label>
+            </div>
+            <!-- Signup button -->
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+    <!-- Container for the success popup -->
+    <div id="success-popup" class="success-popup">
+    <div class="success-box">
+        <h3>Account Created!</h3>
+        <p>A verification mail has been sent to your email.</p>
+        <p>Please verify your email and login to your account</p>
+        <button onclick="goToLogin()">OK</button>
+    </div>
+</div>
+    
+</body>
+</html>

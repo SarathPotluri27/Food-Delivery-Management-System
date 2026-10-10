@@ -1,0 +1,212 @@
+/* ================= ADMIN PANEL ================= */
+
+body {
+    background: #f4f7fb;
+    margin: 0;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: rgba(20, 143, 98, 0.871);
+}
+
+/* ===== HEADER ===== */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(20, 143, 98, 0.95);
+    padding: 15px 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+}
+
+.header h2 {
+    margin: 0;
+    color: white
+}
+
+/* Right section */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.admin-name {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Logout button */
+.header-right button {
+    padding: 8px 15px;
+    background: #ff4d4d;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.header-right button:hover {
+    background: #cc0000;
+}
+
+/* Top buttons */
+button {
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(20, 143, 98, 0.871);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgba(15, 100, 70, 0.984);
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 20px 50px;
+}
+
+/* Section container */
+.admin-section {
+    display: none;
+    background: white;
+    margin: 0;
+    padding: 25px;
+    width: 96%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Section headings */
+.admin-section h2 {
+    color: rgba(20, 143, 98, 0.871);
+    margin-bottom: 15px;
+}
+
+/* Inputs */
+.admin-section input {
+    display: block;
+    width: 98%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: rgba(20, 143, 98, 0.95);
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 82.75px;
+    left: 2;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background: rgba(255,255,255,0.2);
+    border-radius: 6px;
+}
+
+.food-grid-admin {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.food-card-admin {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.food-card-admin:hover {
+    transform: translateY(-5px);
+}
+
+.food-card-admin img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.food-card-admin .content {
+    padding: 10px;
+}
+
+.order-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    background: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.order-col {
+    padding: 5px;
+}
+
+.status {
+    padding: 4px 15px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.status.pending {
+    background: #ffe0e0;
+    color: red;
+}
+
+.status.delivered {
+    background: #d4f8d4;
+    color: green;
+}
+
+canvas{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
